@@ -23,7 +23,6 @@ namespace Core.Models
             Id = _id;
 
             CarCode = carCode;
-            //_carCode = 1000;
             _carCode++;
             CarCode += _carCode;
 
