@@ -49,30 +49,22 @@ namespace Core.Models
         
         public Car FindCarById(int id)
         {
-            bool f = false;
             if(Cars.Length > 0)
             {
                 foreach (Car car in Cars)
                 {
                     if (car.Id == id)
                     {
-                        f = true;
                         return car;
                     }
                 }
-                if (f == false)
-                {
-                    Console.WriteLine($"id'i {id} olan masin yoxdur!");
-                }
             }
             
-
             return null;
         }
 
         public Car FindCarByCarCode(string carCode)
         {
-            bool f = false;
             if(Cars.Length > 0)
             {
                 foreach (Car car in Cars)
@@ -81,10 +73,6 @@ namespace Core.Models
                     {
                         return car;
                     }
-                }
-                if(f == false)
-                {
-                    Console.WriteLine($"{carCode} code'unda masin yoxdur!");
                 }
             }
             

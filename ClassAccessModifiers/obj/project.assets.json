@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sirac Huseynov\\Desktop\\UniTekrar\\ClassAccessModifiers\\ClassAccessModifiers\\ClassAccessModifiers.csproj",
+      "projectUniqueName": "C:\\Users\\Sirac Huseynov\\Desktop\\codee's repo\\ClassAccessModifiers\\ClassAccessModifiers\\ClassAccessModifiers.csproj",
       "projectName": "ClassAccessModifiers",
-      "projectPath": "C:\\Users\\Sirac Huseynov\\Desktop\\UniTekrar\\ClassAccessModifiers\\ClassAccessModifiers\\ClassAccessModifiers.csproj",
+      "projectPath": "C:\\Users\\Sirac Huseynov\\Desktop\\codee's repo\\ClassAccessModifiers\\ClassAccessModifiers\\ClassAccessModifiers.csproj",
       "packagesPath": "C:\\Users\\Sirac Huseynov\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sirac Huseynov\\Desktop\\UniTekrar\\ClassAccessModifiers\\ClassAccessModifiers\\obj\\",
+      "outputPath": "C:\\Users\\Sirac Huseynov\\Desktop\\codee's repo\\ClassAccessModifiers\\ClassAccessModifiers\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Sirac Huseynov\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,8 +53,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Sirac Huseynov\\Desktop\\UniTekrar\\ClassAccessModifiers\\Core\\Core.csproj": {
-              "projectPath": "C:\\Users\\Sirac Huseynov\\Desktop\\UniTekrar\\ClassAccessModifiers\\Core\\Core.csproj"
+            "C:\\Users\\Sirac Huseynov\\Desktop\\codee's repo\\ClassAccessModifiers\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\Sirac Huseynov\\Desktop\\codee's repo\\ClassAccessModifiers\\Core\\Core.csproj"
             }
           }
         }
