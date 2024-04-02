@@ -12,7 +12,7 @@ namespace Core.Models
         public int Id;
         public string Name { get; set; }
         public double Speed { get; set; }
-        private static int _carCode { get; set; } 
+        private static int _carCode = 1000;
         public string CarCode { get; set; }
 
         public Car(string name,  double speed, string carCode)
@@ -23,9 +23,14 @@ namespace Core.Models
             Id = _id;
 
             CarCode = carCode;
-            CarCode += "100";
+            //_carCode = 1000;
             _carCode++;
             CarCode += _carCode;
+
+            
+           
+            
+           
 
             
 
