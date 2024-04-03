@@ -25,12 +25,7 @@ namespace Core.Models
             CarCode = carCode;
             _carCode++;
             CarCode += _carCode;
-
-            
-           
-            
-           
-
+        
             
 
         }

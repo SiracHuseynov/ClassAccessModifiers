@@ -39,64 +39,18 @@ namespace ClassAccessModifiers
                     }
                     while (!double.TryParse(Console.ReadLine(), out speed));
 
-
-                    Console.Write("Masinin CarCode'nu daxil edin: ");
-
-                    carCode = Console.ReadLine();
-
-                    if (carCode.Length == 2)
+                    do
                     {
+                        Console.Write("Masinin CarCode'nu daxil edin: ");
+                        carCode = Console.ReadLine();
+                    } while (!(carCode.Length == 2 && carCode == carCode.ToUpper() && (char.IsLetter(carCode[0]) && char.IsLetter(carCode[1]))));
 
-                        for (int i = 0; i < carCode.Length; i++)
-                        {
-                            if (char.IsLetter(carCode[i]))
-                            {
-                                if (carCode[i].ToString() == carCode[i].ToString().ToUpper())
-                                {
-                                    newCarCode += carCode[i];
-                                }
-                                else
-                                {
-                                    do
-                                    {
-                                        Console.Write("Masinin CarCode'nu daxil edin: ");
-                                        carCode = Console.ReadLine();
-                                    }
-                                    while (!(carCode[i].ToString() == carCode[i].ToString().ToUpper()));
-                                    i--;
-                                }
-                            }
-                            else
-                            {
-                                Console.WriteLine("Masin adinin ilk 2 herfi boyuk olmalidir!");
 
-                                do
-                                {
-                                    Console.Write("Masinin CarCode'nu daxil edin: ");
-                                    carCode = Console.ReadLine();
-                                }
-                                while (!char.IsLetter(carCode[i]));
-                            }
-                        }
+                    Car car = new Car(name, speed, carCode);
 
-                    }
-                    else
-                    {
+                    gallery.AddCar(car); 
 
-                        do
-                        {
-                            Console.Write("Masinin CarCode'nu daxil edin: ");
-
-                            carCode = Console.ReadLine();
-                        }
-                        while (!(carCode.Length == 2));
-                    }
-
-                    Car car = new Car(name, speed, newCarCode);
-
-                    gallery.AddCar(car);
-
-                    newCarCode = "";
+                    //newCarCode = "";
 
                 }
 
